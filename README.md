@@ -30,5 +30,3 @@ I am developing practical cybersecurity skills through structured labs,
 hands-on investigation, and technical documentation.
 
 This repository contains my own notes and analysis of permitted lab exercises.
-
-Created with AI
