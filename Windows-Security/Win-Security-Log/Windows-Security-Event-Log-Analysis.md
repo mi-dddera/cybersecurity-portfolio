@@ -34,7 +34,7 @@ Create local user accounts and groups, configure group membership, and analyze W
 - Enabled test accounts.
 - Added users to the corresponding groups.
 
-<img width="1280" height="1024" alt="CreatedUserGroupsList" src="//Windows-Security/Win-Security-Log/img/CreatedUserGroupsList.png" />
+<img width="1280" height="1024" alt="CreatedUserGroupsList" src="img/CreatedUserGroupsList.png" />
 
 
 ### Step 2 — Failed Logon Event Collection
@@ -46,15 +46,15 @@ Create local user accounts and groups, configure group membership, and analyze W
 Get-WinEvent -FilterHashtable @{LogName='Security'; ID=4625}
 ```
 
-<img width="1289" height="1062" alt="PSHFailedLogsList" src="//Windows-Security/Win-Security-Log/img/PSHFailedLogsList.png" />
+<img width="1289" height="1062" alt="PSHFailedLogsList" src="img/PSHFailedLogsList.png" />
 
 ### Step 3 — Event Filtering
 
 - Filtered Windows Security events by Event ID 4625.
 - Reviewed the returned authentication events.
 
-<img width="1293" height="1066" alt="filter4625Log" src="//Windows-Security/Win-Security-Log/img/filter4625Log.png" />
-<img width="1281" height="1072" alt="filteredLogTo4625" src="//Windows-Security/Win-Security-Log/img/filteredLogTo4625.png" />
+<img width="1293" height="1066" alt="filter4625Log" src="img/filter4625Log.png" />
+<img width="1281" height="1072" alt="filteredLogTo4625" src="img/filteredLogTo4625.png" />
 
 ### Step 4 — Event Log Review
 
@@ -62,7 +62,7 @@ Get-WinEvent -FilterHashtable @{LogName='Security'; ID=4625}
 - Imported and opened saved logs in Windows Event Viewer.
 - Examined individual event details.
 
-<img width="1294" height="1068" alt="SavedAndOpenedLogs" src="//Windows-Security/Win-Security-Log/img/SavedAndOpenedLogs.png" />
+<img width="1294" height="1068" alt="SavedAndOpenedLogs" src="img/SavedAndOpenedLogs.png" />
 
 ### Step 5 — Group Access Permissions
 
@@ -72,7 +72,7 @@ Get-WinEvent -FilterHashtable @{LogName='Security'; ID=4625}
 - Assigned Modify permissions to the corresponding department groups.
 - Retained Full Control for the built-in Administrators group.
 
-  <img width="1352" height="1024" alt="accessList" src="//Windows-Security/Win-Security-Log/img/accessList.png" />
+  <img width="1352" height="1024" alt="accessList" src="img/accessList.png" />
 
 
 
